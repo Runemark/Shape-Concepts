@@ -41,7 +41,7 @@ enum CCAndroidScreenMode {
     CCScreenScaledAspectFitEmulationMode
 };
 
-BRIDGE_CLASS("com.apportable.GLView")
+BRIDGE_CLASS("com.Brigham Young University.GLView")
 @interface CCGLView : GLView <CCDirectorView>
 
 

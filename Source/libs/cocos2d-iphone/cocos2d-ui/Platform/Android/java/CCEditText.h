@@ -13,7 +13,7 @@
 
 typedef void (^CCEditTextCompletionBlock)(void);
 
-BRIDGE_CLASS("com.apportable.GLEditText")
+BRIDGE_CLASS("com.Brigham Young University.GLEditText")
 @interface CCEditText : GLEditText
 - (id)initWithContext:(AndroidContext *)context;
 - (BOOL)onKeyPreIme:(int32_t)keyCode keyEvent:(AndroidKeyEvent *)event;

@@ -1,6 +1,6 @@
 import Foundation
 
-class MainScene: CCNode {
+class MainScene: CCNode, RequestDelegate {
     
     let brightColor = CCColor(red:0.8, green:0.8, blue:0.8)
     let midColor = CCColor(red:0.5, green:0.5, blue:0.5)
@@ -18,34 +18,37 @@ class MainScene: CCNode {
     var pixelWidth = 25
     var pixelHeight = 25
     
+    var atlas:ATLAS
+    
     override init()
     {
         // width = COLS = x
         // height = ROWS = y
         drawing = Drawing(width:7, height:7)
         
-        drawing.addPixel(2, y:6, v:1)
-        drawing.addPixel(3, y:6, v:1)
-        drawing.addPixel(4, y:6, v:1)
-        drawing.addPixel(5, y:5, v:1)
-        drawing.addPixel(6, y:4, v:1)
-        drawing.addPixel(6, y:3, v:1)
-        drawing.addPixel(6, y:2, v:1)
-        drawing.addPixel(5, y:1, v:1)
-        drawing.addPixel(4, y:0, v:1)
-        drawing.addPixel(3, y:0, v:1)
-        drawing.addPixel(2, y:0, v:1)
-        drawing.addPixel(1, y:1, v:1)
-        drawing.addPixel(0, y:2, v:1)
-        drawing.addPixel(0, y:3, v:1)
-        drawing.addPixel(0, y:4, v:1)
-        drawing.addPixel(1, y:5, v:1)
+//        drawing.addPixel(2, y:6, v:1)
+//        drawing.addPixel(3, y:6, v:1)
+//        drawing.addPixel(4, y:6, v:1)
+//        drawing.addPixel(5, y:5, v:1)
+//        drawing.addPixel(6, y:4, v:1)
+//        drawing.addPixel(6, y:3, v:1)
+//        drawing.addPixel(6, y:2, v:1)
+//        drawing.addPixel(5, y:1, v:1)
+//        drawing.addPixel(4, y:0, v:1)
+//        drawing.addPixel(3, y:0, v:1)
+//        drawing.addPixel(2, y:0, v:1)
+//        drawing.addPixel(1, y:1, v:1)
+//        drawing.addPixel(0, y:2, v:1)
+//        drawing.addPixel(0, y:3, v:1)
+//        drawing.addPixel(0, y:4, v:1)
+//        drawing.addPixel(1, y:5, v:1)
         
-//        let bounds = UIScreen.mainScreen().bounds
-//        center = ccp(bounds.width/2, bounds.height/2)
+        self.atlas = ATLAS()
         
         center = ccp(400.0, 250.0)
         origin = ccp(center.x - CGFloat(drawing.pixels.cols * pixelWidth)/2, center.y - CGFloat(drawing.pixels.rows * pixelHeight)/2)
+        
+        super.init()
     }
     
     override func onEnter()
@@ -58,9 +61,15 @@ class MainScene: CCNode {
         
         self.addChild(pixelNode)
         
+        atlas.setDelegate(self)
+//        atlas.represent("line", drawing:drawing)
+        
+        let layer = DBNLayer(visible:9, hidden:18)
+        layer.trainInstance([0,1,0,1,0,1,0,1,0])
+        
         redrawDrawing()
     }
-    
+
     func redrawDrawing()
     {
         for x in 0..<drawing.pixels.rows
@@ -151,5 +160,10 @@ class MainScene: CCNode {
             increment = 1
         }
     }
-
+    
+    // REQUEST DELEGATE
+    func requestUnknown(request:String)
+    {
+        // HANDLE IT
+    }
 }

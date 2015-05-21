@@ -13,7 +13,9 @@ class Array2D<T>
     var cols:Int, rows:Int
     var matrix:[T]
     
+    // max x (rows), max y (cols)
     init(rows:Int, cols:Int, filler:T) {
+        
         self.cols = cols
         self.rows = rows
         matrix = Array<T>(count:cols*rows, repeatedValue:filler)
@@ -27,6 +29,17 @@ class Array2D<T>
         set
         {
             matrix[cols * row + col] = newValue
+        }
+    }
+    
+    func fill(value:T)
+    {
+        for x in 0..<rows
+        {
+            for y in 0..<cols
+            {
+                matrix[cols*x + y] = value
+            }
         }
     }
     

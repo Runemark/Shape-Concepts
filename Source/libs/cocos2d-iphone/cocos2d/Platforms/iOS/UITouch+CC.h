@@ -2,7 +2,7 @@
 /*
  * cocos2d for iPhone: http://www.cocos2d-iphone.org
  *
- * Copyright (c) 2013 Apportable Inc.
+ * Copyright (c) 2013 Brigham Young University Inc.
  * Copyright (c) 2013-2014 Cocos2D Authors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy

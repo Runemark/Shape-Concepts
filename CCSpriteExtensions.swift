@@ -2,8 +2,8 @@
 //  CCNodeExtension.swift
 //  ATLAS
 //
-//  Created by Alicia Cicon on 4/20/15.
-//  Copyright (c) 2015 Apportable. All rights reserved.
+//  Created by Martin Mumford on 4/20/15.
+//  Copyright (c) 2015 Brigham Young University. All rights reserved.
 //
 
 import Foundation

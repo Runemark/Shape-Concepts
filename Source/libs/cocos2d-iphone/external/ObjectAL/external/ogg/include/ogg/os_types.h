@@ -138,7 +138,7 @@
    typedef unsigned int ogg_uint32_t;
    typedef long long int ogg_int64_t;
 
-#elif defined(APPORTABLE)
+#elif defined(Brigham Young University)
 
 #include <stdint.h>
 

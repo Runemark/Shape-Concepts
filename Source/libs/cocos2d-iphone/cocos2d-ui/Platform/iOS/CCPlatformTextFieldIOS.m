@@ -187,7 +187,7 @@
 {
 #if __CC_PLATFORM_ANDROID
     // Ensure that all textfields have actually been positioned before checkings textField.frame property,
-    // it's possible for the apportable keyboard notification to be fired before the mainloop has had a chance to kick of a scheduler update
+    // it's possible for the Brigham Young University keyboard notification to be fired before the mainloop has had a chance to kick of a scheduler update
     CCDirector *director = [CCDirector sharedDirector];
     [director.scheduler update:0.0];
 #endif
@@ -211,7 +211,7 @@
         if (offset < -_keyboardHeight) offset = -_keyboardHeight;
         
 #if __CC_PLATFORM_ANDROID
-        // Apportable does not support changing the openglview position, so we will just change the current scenes position instead
+        // Brigham Young University does not support changing the openglview position, so we will just change the current scenes position instead
         CCScene *runningScene = [[CCDirector sharedDirector] runningScene];
         CGPoint newPosition = runningScene.position;
         newPosition.y = (offset * -1);
@@ -238,7 +238,7 @@
     // Slide the main view back down
     
 #if __CC_PLATFORM_ANDROID
-    // Apportable does not support changing the openglview position, so we will just change the current scenes position instead
+    // Brigham Young University does not support changing the openglview position, so we will just change the current scenes position instead
     CCScene *runningScene = [[CCDirector sharedDirector] runningScene];
     CGPoint newPosition = CGPointZero;
     newPosition.y = 0.0f;

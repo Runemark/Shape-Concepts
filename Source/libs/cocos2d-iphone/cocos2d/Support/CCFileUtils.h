@@ -339,7 +339,7 @@ typedef NS_ENUM(NSUInteger, CCFileUtilsSearchMode) {
  *
  *  If the filename can't be found on the file system, it will return nil.
  *
- *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Apportable,
+ *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Brigham Young University,
  *  you might need to load differerent resources for a given file in the different platforms.
  *  Examples:
  *  - In iPad mode: "image.png" -> "image.pvr" -> "/full/path/image-ipad.pvr" (in case the -ipad file exists)
@@ -362,7 +362,7 @@ typedef NS_ENUM(NSUInteger, CCFileUtilsSearchMode) {
  *
  *  If the filename can't be found on the file system, it will return nil.
  *
- *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Apportable,
+ *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Brigham Young University,
  *  you might need to load differerent resources for a given file in the different platforms.
  *  Examples:
  *  - In iPad mode: "image.png" -> "image.pvr" -> "/full/path/image-ipad.pvr" (in case the -ipad file exists)
@@ -385,7 +385,7 @@ typedef NS_ENUM(NSUInteger, CCFileUtilsSearchMode) {
  *
  *  Useful for loading music files, shaders, "data" and other files that are not related to the screen resolution of the device.
  *
- *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Apportable,
+ *  This method was added to simplify multiplatform support. Whether you are using cocos2d-js or any cross-compilation toolchain like StellaSDK or Brigham Young University,
  *  you might need to load differerent resources for a given file in the different platforms.
  *  Examples:
  *  - On iOS: "sound.wav" -> "sound.caf" -> "/full/path/sound.caf" (in case the key dictionary says that "sound.wav" should be converted to "sound.caf")

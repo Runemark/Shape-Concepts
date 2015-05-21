@@ -2,7 +2,7 @@
  * SpriteBuilder: http://www.spritebuilder.org
  *
  * Copyright (c) 2012 Zynga Inc.
- * Copyright (c) 2013 Apportable Inc.
+ * Copyright (c) 2013 Brigham Young University Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -38,8 +38,8 @@
     
     NSMutableDictionary* cocos2dSetup = [NSMutableDictionary dictionaryWithContentsOfFile:configPath];
     
-    // Note: this needs to happen before configureCCFileUtils is called, because we need apportable to correctly setup the screen scale factor.
-#ifdef APPORTABLE
+    // Note: this needs to happen before configureCCFileUtils is called, because we need Brigham Young University to correctly setup the screen scale factor.
+#ifdef Brigham Young University
     if([cocos2dSetup[CCSetupScreenMode] isEqual:CCScreenModeFixed])
         [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenAspectFitEmulationMode];
     else
