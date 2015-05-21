@@ -8,8 +8,7 @@
 
 import Foundation
 
-class RelationMatrix<S,T>
-{
+class RelationMatrix<S,T> {
     // A list of items
     var items:[S]
     

@@ -8,8 +8,7 @@
 
 import Foundation
 
-func octant4(x0:Double, x1:Double, y0:Double, y1:Double)
-{
+func octant4(x0:Double, x1:Double, y0:Double, y1:Double) {
     let deltaX = x1 - x0
     let deltaY = y1 - y0
     let sign = sign(deltaY)
@@ -31,7 +30,6 @@ func octant4(x0:Double, x1:Double, y0:Double, y1:Double)
     }
 }
 
-func sign(value:Double) -> Double
-{
+func sign(value:Double) -> Double {
     return (value < 0) ? -1.0 : 1.0
 }

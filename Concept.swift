@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Concept
-{
+class Concept {
     // Right now, a concept can only be a point. That's it.
     var identifier:String
     var shape:AbstractShape?

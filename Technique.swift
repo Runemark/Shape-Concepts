@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Technique
-{
+class Technique {
     // A technique is a means of altering the drawing in some way
     // A technique can be composed of sub-techniques
     

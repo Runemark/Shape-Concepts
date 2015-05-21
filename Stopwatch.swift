@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Stopwatch
-{
+class Stopwatch {
     var startTime:CFAbsoluteTime
     
     init()
@@ -31,8 +30,7 @@ class Stopwatch
 // Mark: Utility Methods
 
 // How much faster or slower than a is b?
-public func compareTimes(a:CFTimeInterval, b:CFTimeInterval) -> String
-{
+public func compareTimes(a:CFTimeInterval, b:CFTimeInterval) -> String {
     var modifier = "as fast as"
     
     if (a > b)

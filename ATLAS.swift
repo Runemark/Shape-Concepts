@@ -13,8 +13,7 @@ public protocol RequestDelegate {
     func requestUnknown(request:String)
 }
 
-class ATLAS
-{
+class ATLAS {
     // communicates with the human
     var requestDelegate:RequestDelegate?
     

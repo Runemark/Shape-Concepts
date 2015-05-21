@@ -8,13 +8,11 @@
 
 import Foundation
 
-enum elementType
-{
+enum elementType {
     case ag_variable, ag_terminal
 }
 
-class AGElement
-{
+class AGElement {
     var type:elementType
     var expansions:[AGElement]
     

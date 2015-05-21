@@ -8,8 +8,7 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
 
     // enable FPS and SPF
@@ -41,8 +40,7 @@
     [director runWithScene:[CCBReader loadAsScene:@"MainScene"]];
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification
-{
+- (void)applicationWillTerminate:(NSNotification *)aNotification {
     [[CCPackageManager sharedManager] savePackages];
 }
 

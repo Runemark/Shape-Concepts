@@ -8,8 +8,7 @@
 
 import Foundation
 
-class WorkInProgress
-{
+class WorkInProgress {
     var drawing:Drawing
     
     init(drawing:Drawing)

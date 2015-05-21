@@ -8,8 +8,7 @@
 
 import Foundation
 
-class DBNLayer
-{
+class DBNLayer {
     // Values
     var h1:[Int]
     

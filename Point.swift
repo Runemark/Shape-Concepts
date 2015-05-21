@@ -8,7 +8,6 @@
 
 import Foundation
 
-class Point: AbstractShape
-{
+class Point: AbstractShape {
     
 }

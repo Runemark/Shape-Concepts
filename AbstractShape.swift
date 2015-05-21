@@ -8,8 +8,7 @@
 
 import Foundation
 
-enum spatialRelationship
-{
+enum spatialRelationship {
     case none, adjacentTo, nearTo, farFrom, enclosedBy, encloses, leftOf, rightOf, above, below, connectedByLine
 }
 
@@ -26,8 +25,7 @@ enum spatialRelationship
 //  Guide Lines (arrangement) -> abstractShapes that lie along a line, or a curve. (for example, [bubbles] rising from [a cauldron])
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-class AbstractShape
-{
+class AbstractShape {
     var components:RelationMatrix<AbstractShape, spatialRelationship>
     
     init()

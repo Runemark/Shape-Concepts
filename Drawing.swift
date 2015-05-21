@@ -8,21 +8,18 @@
 
 import Foundation
 
-struct Pixel
-{
+struct Pixel {
     var x:Int
     var y:Int
     var v:Int
 }
 
-struct Coord
-{
+struct Coord {
     var x:Double
     var y:Double
 }
 
-class Drawing
-{
+class Drawing {
     var pixels:Array2D<Int>
     var actionBuffer = [Pixel]()
     

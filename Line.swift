@@ -8,7 +8,6 @@
 
 import Foundation
 
-class Line : AbstractShape
-{
+class Line : AbstractShape {
     
 }

@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Array2D<T>
-{
+class Array2D<T> {
     var cols:Int, rows:Int
     var matrix:[T]
     

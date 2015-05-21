@@ -8,7 +8,6 @@
 
 import Foundation
 
-class Shape : AbstractShape
-{
+class Shape : AbstractShape {
     
 }
